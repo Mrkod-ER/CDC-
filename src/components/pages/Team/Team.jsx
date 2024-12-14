@@ -1,4 +1,6 @@
 import React, { useState, useEffect, Suspense, lazy } from "react";
+import {LazyLoadImage} from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import "./Team.css";
 import FacultyAdvisor from "./Faculty/FacultyAdvisor.jsx";
 import { Home } from "./Alumanipage.jsx";
@@ -44,7 +46,7 @@ function Team() {
   }
 
   return (
-    <div className="overflow-x-hidden min-h-screen relative bg-gray-900 after:content-[''] relative z-[15]">
+    <div className="overflow-x-hidden min-h-screen  bg-gray-900 after:content-[''] relative z-[15]">
       <div
         className="absolute top-0 right-0 w-full h-full blur-3xl z-[0]"
         style={{
